@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /var/www/html
+     destination: /home/ec2-user/codedeploy-source
 permissions:
-   - object: /var/www/html
+   - object: /home/ec2-user/codedeploy-source
      pattern: "**"
      owner: apache
      group: apache
