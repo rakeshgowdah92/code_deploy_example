@@ -1,0 +1,14 @@
+1.Copy the zip and unzip folder
+2.Move both the files to /usr/bin/
+3.change permission of files using chmod 711 filename
+4.rpm -ivh jre-8u73-linux-x64.rpm 
+tranfer SDK files and run sdk using java -jar build/libs/bank-sample-java-1.1.0-all.jar --ssl
+5./usr/local/bin(pip3.6 and python3.6)
+6.change mode of both the files(chmod 777 filename)
+7./usr/local/lib(python3.6)
+8.path folder set in bash_profile
+9.vi .bash_profile
+alias python3='./usr/local/bin/python3.6'
+alias pip3='./usr/local/bin/pip3'
+source .bash_profile
+10.virtual env
