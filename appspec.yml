@@ -2,21 +2,12 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /home/ec2-user/codedeploy-source
+     destination: /home/ec2-user/aggregator-codedeploy
 permissions:
-   - object: /home/ec2-user/codedeploy-source
+   - object: /home/ec2-user/aggregator-codedeploy
      pattern: "**"
      owner: apache
      group: apache
      mode: 755
      type:
        - file
-hooks:
-   BeforeInstall:
-    - location: installapache.sh
-      runas: root
-    - location: startapache.sh
-      runas: root
-   AfterInstall:
-    - location: restartapache.sh
-      runas: root
